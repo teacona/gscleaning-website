@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/clean.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            position:relative;
+            z-index:1;
+            background-color:#333333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            background-position:center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right:20px;
+            margin-left:0;
+            margin-top:0;
+            margin-bottom:0;
+        }
+
+        h1 {
+            margin: 0;
+            text-align:center;
+        }
+
+        .names {
+            display:flex;
+        }
+
+        .names span {
+            margin-left:10px;
+        }
+
+        .nav-links {
+            background-color:#3498db;
+            padding:20px;
+            margin:20px;
+        }
+
+        .nav-links ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+            display:flex;
+            justify-content:center;
+        }
+
+        .nav-links li {
+            margin:0 10px;
+        }
+
+        .nav-links a {
+            color:#333;
+            text-decoration:italic;
+        }
+
+        .parent-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            padding: 20 px; /* Added padding for spacing */
+        }
+
+        .parent {
+            width: 45%; /* Adjusted width to create space between sections */
+            margin-bottom: 20px; /* Added margin between sections */
+        }
+
+        /* Style for each service section */
+        .service-section {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 30px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center; /* Center the content */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-section h2 {
+            margin-bottom: 10px; /* Added margin below headings */
+        }
+
+        .service-section p {
+            margin-bottom: 10px; /* Added margin below paragraphs */
+        }
+
+        .service-section img {
+            width: 80%; /* Adjusted image width */
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .nav-links li a:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/gslogo.png" alt="Logo">
+        <h1>Services</h1>
+        <div class="names">
+            <span>Andrew Nguyen</span>
+            <span>Dinesh Kumar</span>
+            <span>Khushi</span>
+            <span>Kieth Cruz</span>
+            <span>Montasir Karimmuddin</span>
+        </div>
+    </header>
+
+    <div class="nav-links">
+        <ul>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\home.html">Home</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\aboutus.html">About Us</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\service.html">Service</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\gallery.html">Gallery</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\contactus.html">Contact Us</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\reviews.html">Reviews</a></li>
+        </ul>
+    </div>
+
+    <div class="parent-container">
+
+        <div class="parent parent-1">
+            <div class="service-section Deep-Cleaning">
+                <h2>Deep Cleaning</h2>
+                <p>We meticulously clean your home from top to bottom, leaving no corner untouched and expertly scrubbing and sanitizing every surface and appliance</p>
+                <img src="images/deepcleaning.jpg" alt="deep cleaning">
+            </div>
+        </div>
+
+        <div class="parent parent-2">
+            <div class="service-section Stain-Removal">
+                <h2>Stain Removal</h2>
+                <p>We erase your stains with precision, reviving your surfaces and appliances to their pristine glory</p>
+                <img src="images/stainremoval.png" alt="stain removal">
+            </div>
+        </div>
+
+        <div class="parent parent-3">
+            <div class="service-section Steam-Cleaning">
+                <h2>Steam Cleaning</h2>
+                <p>Our eco-friendly method blasts away grime, leaving surfaces fresh and sanitized. Pure cleanliness</p>
+                <img src="images/steamcleaning.jpg" alt="steam cleaning">
+            </div>
+        </div>
+
+        <div class="parent parent-4">
+            <div class="service-section Carpet-Deodorizing">
+                <h2>Carpet Deodorizing</h2>
+                <p>Renewing carpets, eliminating odors, and bringing a breath of fresh air to homes</p>
+                <img src="images/carpetdeodorizing.jpg" alt="carpet deodorizing">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="path/to/lightbox.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f89c;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.2s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("gscleaning.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            background-color: #333333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-position: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+
+
+        .names {
+            display: flex;
+        }
+
+        .names span {
+            margin-left: 10px;
+        }
+
+
+        .nav-links {
+            background-color: #3498db;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: italic;
+        }
+
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .nav-links li a:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            border: 2px solid #ccc; /* Add the gray border */
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        
+
+        
+
+        
+    </style>
+</head>
+
+
+<header>
+    <img class="logo" src="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\gslogo.png" alt="Logo">
+    <h1>Gallery</h1>
+    <div class="names">
+        <span>Andrew Nguyen</span>
+        <span>Dinesh Kumar</span>
+        <span>Khushi</span>
+        <span>Kieth Cruz</span>
+        <span>Montasir Karimmuddin</span>
+    </div>
+</header>
+
+
+<div class="nav-links">
+    <ul>
+        <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\home.html">Home</a></li>
+        <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\aboutus.html">About Us</a></li>
+        <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\service.html">Service</a></li>
+        <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\gallery.html">Gallery</a></li>
+        <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\contactus.html">Contact Us</a></li>
+        <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\reviews.html">Reviews</a></li>
+    </ul>
+</div>
+
+<body>
+    <div class="gallery">
+        <a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\image1.png" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+            <img src="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\image1.png" alt="Image 1">
+        </a>
+        <a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\image2.png" class="gallery-item" data-lightbox="gallery" data-title="Image 2">
+            <img src="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\image2.png" alt="Image 2">
+        </a>
+        <a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\image3.png" class="gallery-item" data-lightbox="gallery" data-title="Image 3">
+            <img src="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\image3.png" alt="Image 3">
+        </a>
+        
+        <!-- Add more images as needed -->
+    </div>
+
+    <script src="path/to/lightbox.js"></script>
+</body>
+
+</html>

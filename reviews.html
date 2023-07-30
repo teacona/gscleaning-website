@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="path/to/lightbox.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/gsvan.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-color: #f8f8f8;
+        
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            background-color: #333333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-position: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .names {
+            display: flex;
+        }
+
+        .names span {
+            margin-left: 10px;
+        }
+
+        .nav-links {
+            background-color: #3498db;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: italic;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 30%;
+            padding: 10px;
+            background-color: #FFA500;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FFA500;
+        }
+
+        .nav-links li a:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\gslogo.png" alt="Logo">
+        <h1>Reviews</h1>
+        <div class="names">
+            <span>Andrew Nguyen</span>
+            <span>Dinesh Kumar</span>
+            <span>Khushi</span>
+            <span>Kieth Cruz</span>
+            <span>Montasir Karimmuddin</span>
+        </div>
+    </header>
+
+    <div class="nav-links">
+        <ul>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\home.html">Home</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\aboutus.html">About Us</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\service.html">Service</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\gallery.html">Gallery</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\contactus.html">Contact Us</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\reviews.html">Reviews</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Let us know how we did!</h1>
+
+
+        <form action="https://webdevbasics.net/scripts/demo.php?" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Phone Number:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Review Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <form action="C:\Web_Essentials_Final\Web Essentials Final\WebPages\home.html">
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+
+            <script>
+                // Send the collected information using the GET method
+                document.getElementById("bookingForm").addEventListener("submit", function(event) {
+                  event.preventDefault(); // Prevent the form from submitting normally
+                  var formData = new FormData(this);
+                  var queryString = new URLSearchParams(formData).toString();
+                  var url = "https://webdevbasics.net/scripts/demo.php?" + queryString;
+                  window.location.href = url;
+                });
+            
+                // Send the collected information using the POST method
+                document.getElementById("bookingForm").addEventListener("submit", function(event) {
+                  event.preventDefault(); // Prevent the form from submitting normally
+                  var formData = new FormData(this);
+                  var url = "https://webdevbasics.net/scripts/demo.php";
+                  var request = new XMLHttpRequest();
+                  request.open("POST", url, true);
+                  request.send(formData);
+                });
+              </script>
+
+
+
+            <script src="path/to/lightbox.js"></script>
+</body>
+
+</html>

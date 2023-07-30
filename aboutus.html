@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/vaccum.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            background-color: #333333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-position: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .names {
+            display: flex;
+        }
+
+        .names span {
+            margin-left: 10px;
+        }
+
+
+        .nav-links {
+            background-color: #3498db;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: italic;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .our-mission {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #3498db; /* Blue border */
+            color: #fff;
+            padding: 20px;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            width: 50%; /* Set a fixed width to avoid stretching across the entire screen */
+            margin-bottom: 20px; /* Add margin to create even gap */
+        }
+
+        .our-mission h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db; /* Blue border under the heading */
+            padding-bottom: 5px;
+        }
+
+        .our-mission p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .meet-our-team {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #3498db; /* Blue border */
+            color: #fff;
+            padding: 20px;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            width: 25%; /* Set a fixed width to avoid stretching across the entire screen */
+        }
+
+        .meet-our-team h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db; /* Blue border under the heading */
+            padding-bottom: 5px;
+        }
+
+        .meet-our-team p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .nav-links li a:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="C:\Web_Essentials_Final\Web Essentials Final\WebPages\images\gslogo.png" alt="Logo">
+        <h1>About Us</h1>
+        <div class="names">
+            <span>Andrew Nguyen</span>
+            <span>Dinesh Kumar</span>
+            <span>Khushi</span>
+            <span>Kieth Cruz</span>
+            <span>Montasir Karimmuddin</span>
+        </div>
+    </header>
+
+
+    <div class="nav-links">
+        <ul>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\home.html">Home</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\aboutus.html">About Us</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\service.html">Service</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\gallery.html">Gallery</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\contactus.html">Contact Us</a></li>
+            <li><a href="C:\Web_Essentials_Final\Web Essentials Final\WebPages\reviews.html">Reviews</a></li>
+        </ul>
+    </div>
+
+
+    <div class="content-wrapper">
+
+        <div class="our-mission">
+            <h2>Our Mission</h2>
+            <p>At GoodShepherd, our mission is to provide exceptional cleaning services that transform spaces into pristine and inviting environments.
+                 We are dedicated to delivering top-notch cleaning solutions tailored to our clients' specific needs, whether it's residential or commercial 
+                  cleaning. With a commitment to excellence, reliability, and customer satisfaction, our team of skilled professionals strives to exceed 
+                  expectations in every task we undertake. Through our meticulous attention to detail and the use of eco-friendly cleaning practices, we 
+                  aim to create healthier and more hygienic living and working spaces for our valued customers. At the core of our mission is the belief 
+                  that a clean and tidy environment contributes to a happier, healthier, and more productive lifestyle.</p>
+        </div>
+
+
+        <div class="meet-our-team">
+            <h2>Meet Our Team</h2>
+            <p>Andrew Nguyen<br>
+                Dinesh Kumar<br>
+                Khushi<br>
+                Kieth Cruz<br>
+                Montasir Karimmuddin</p>
+        </div>
+    </div>
+</body>
+
+</html>
